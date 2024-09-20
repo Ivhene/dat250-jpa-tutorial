@@ -36,6 +36,7 @@ public class Main {
     List<Todo> todoList = q.getResultList();
     for (Todo todo : todoList) {
       System.out.println(todo);
+      
     }
     System.out.println("Size: " + todoList.size());
   }
