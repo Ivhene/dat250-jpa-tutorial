@@ -8,6 +8,7 @@ The code can be found (here)[https://github.com/Ivhene/dat250-jpa-tutorial/tree/
 As I mentioned, I used the database that was provided for other HVL courses earlier. That database is a PostgreSQL database, available in the cloud as long as the connection is provided. I inspected the database using PGAdmin. The following datatables where created:
 
 ![image](https://github.com/user-attachments/assets/ee4a463c-d7cf-488d-8cd9-d404fcf9ae26)
+
 (I dont know why todo is there, put doesnt matter)
 
 And had the following content: 
