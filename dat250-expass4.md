@@ -10,6 +10,7 @@ As I mentioned, I used the database that was provided for other HVL courses earl
 ![image](https://github.com/user-attachments/assets/ee4a463c-d7cf-488d-8cd9-d404fcf9ae26)
 
 And had the following content: 
+
 ![image](https://github.com/user-attachments/assets/ae6d653e-8ccd-4aea-bff7-ab10d8d8375c)
 
 ![image](https://github.com/user-attachments/assets/c3d3983e-9eff-4aa6-9db0-b6beb23a2314)
