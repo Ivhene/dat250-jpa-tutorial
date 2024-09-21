@@ -1,20 +1,33 @@
 <persistence xmlns="https://jakarta.ee/xml/ns/persistence"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
              xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
-  version="3.0">
+             version="3.0">
     <persistence-unit name="jpa-tutorial" transaction-type="RESOURCE_LOCAL">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-        <class>no.hvl.dat250.jpa.tutorial.basicexample.Todo</class>
-        <properties>
-            <property name="hibernate.archive.autodetection" value="class"/>
-            <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
-            <property name="hibernate.connection.driver_class" value="org.h2.Driver"/>
-            <property name="hibernate.connection.url" value="jdbc:h2:file:./DB;DB_CLOSE_DELAY=-1"/>
 
-            <property name="hibernate.connection.pool_size" value="1"/>
+        <!-- Your entity classes -->
+        <class>no.hvl.dat250.jpa.tutorial.basicexample.Todo</class>
+        <class>no.hvl.dat250.jpa.tutorial.creditcards.Customer</class>
+        <class>no.hvl.dat250.jpa.tutorial.creditcards.Address</class>
+        <class>no.hvl.dat250.jpa.tutorial.creditcards.CreditCard</class>
+        <class>no.hvl.dat250.jpa.tutorial.creditcards.Pincode</class>
+        <class>no.hvl.dat250.jpa.tutorial.creditcards.Bank</class>
+
+        <!-- Database properties for PostgreSQL -->
+        <properties>
+            <!-- PostgreSQL driver -->
+            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+
+            <!-- Database connection details -->
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://ider-database.westeurope.cloudapp.azure.com:5432/h598990"/>
+            <property name="javax.persistence.jdbc.user" value="h598990"/>
+            <property name="javax.persistence.jdbc.password" value="JegFiksetDette2"/>
+
+            <!-- Hibernate settings -->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
             <property name="hibernate.show_sql" value="false"/>
             <property name="hibernate.format_sql" value="true"/>
-            <property name="hibernate.hbm2ddl.auto" value="create"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/> <!-- 'update' ensures schema auto-update -->
         </properties>
     </persistence-unit>
 </persistence>
