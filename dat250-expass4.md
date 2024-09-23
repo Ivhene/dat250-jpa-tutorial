@@ -26,5 +26,7 @@ And had the following content:
 ![image](https://github.com/user-attachments/assets/fbef659d-a819-45a2-8318-01f6f320ceb1)
 
 
+(Mulitple entries due to the main application running several times)
+
 # Pending issues
 There are no pending issues from this assignment (unless I missed something or did something wrong 😊)
