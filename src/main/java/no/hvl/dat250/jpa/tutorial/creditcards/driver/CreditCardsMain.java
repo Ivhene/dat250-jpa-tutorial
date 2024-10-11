@@ -5,7 +5,6 @@ import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
 import no.hvl.dat250.jpa.tutorial.creditcards.*;
 
-import java.util.Arrays;
 import java.util.Set;
 
 public class CreditCardsMain {
@@ -18,8 +17,7 @@ public class CreditCardsMain {
       em.getTransaction().begin();
       createObjects(em);
       em.getTransaction().commit();
-    }
-
+   }
   }
 
   private static void createObjects(EntityManager em) {
